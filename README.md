@@ -49,6 +49,48 @@ for ($i=1; $i <= 10; $i++) {
 }
 ```
 
+### MULTIPLE RATE-LIMITS
+```
+<?php
+require_once('ratelimiter.php');
+
+for ($i=1; $i <= 10; $i++) {
+	if (ratelimiter(5, 1, false, 'apple')){
+		echo 'Eat apple';
+	}
+	else
+	{
+		echo 'Error - apple';
+	}
+
+	if (ratelimiter(5, 1, false, 'orange')){
+		echo 'Eat orange';
+	}
+	else
+	{
+		echo 'Error - orange';
+	}
+}
+```
+
+
+### ONLY CHECK IF HAS LIMIT
+<?php
+require_once('ratelimiter.php');
+
+for ($i=1; $i <= 5; $i++) {
+	if (ratelimiter(10, 1)){
+		echo 'Foo';
+	}
+	else
+	{
+		echo 'Error';
+	}
+}
+var_dump(ratelimiter(10, 1, true));
+//return true
+```
+
 
 
 ## Donation
