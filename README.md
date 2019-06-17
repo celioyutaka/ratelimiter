@@ -74,7 +74,7 @@ for ($i=1; $i <= 10; $i++) {
 ```
 
 
-### ONLY CHECK IF HAS ALLOWANCE
+### CHECK IF HAS ALLOWANCE
 ```
 <?php
 require_once('ratelimiter.php');
@@ -91,6 +91,21 @@ for ($i=1; $i <= 5; $i++) {
 var_dump(ratelimiter(10, 1, true));
 //return true
 ```
+
+### NOTES
+The function parameters define the file name. Examples:
+
+**ratelimiter(3, 2)**
+- request_allowance__**3_2**.dat
+- request_lastcheck__**3_2**.dat
+
+**ratelimiter(10, 1)**
+- request_allowance__**10_1**.dat
+- request_lastcheck__**10_1**.dat
+
+**ratelimiter(10, 1, false, 'CUSTOM_NAME')**
+- request_allowance_**CUSTOM_NAME_10_1**.dat
+- request_lastcheck_**CUSTOM_NAME_10_1**.dat
 
 
 
