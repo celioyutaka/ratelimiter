@@ -74,7 +74,7 @@ for ($i=1; $i <= 10; $i++) {
 ```
 
 
-### ONLY CHECK IF HAS LIMIT
+### ONLY CHECK IF HAS ALLOWANCE
 ```
 <?php
 require_once('ratelimiter.php');
