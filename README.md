@@ -1,8 +1,9 @@
 # Rate Limiter
 Rate Limiter - X Requests per Y Seconds - Server Side
+Using Files
 
 ## HOW TO USE
-IMPORTANT, ALLOW WRITE PERMISSION
+*ALLOW WRITE PERMISSION*
 
 ### Simple Example
 ```
