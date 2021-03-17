@@ -8,7 +8,7 @@
  * @param int $rate Requests
  * @param int $per Per Seconds
  * @param bool $only_verify Don't decresces allowance, only checks
- * @param string $unique Unique name, when rate and per is equal but limiter is diferent
+ * @param string $unique Unique name, when rate and per is equal but limiter is different
  *
  * @return bool TRUE -> IS ALLOWED, FALSE -> IS NOT ALLOWED
  * 
